@@ -20,6 +20,14 @@ Tested using java 8.
 
 ## Design
 * Design has Time Complexity : O(n), Auxiliary Space : O(1)
+* Algorithm :
+As we traverse the array, we keep the max difference ie. bestResult.
+If there is a new low share price encountered, we mark it as the current low,
+using this new current low to calculate subsequent results, keeping the
+results if it betters the bestResult value.
+
+@see Jadane's Algorithm.
+@see https://en.wikipedia.org/wiki/Maximum_subarray_problem#Kadane's_algorithm
 
 
 ## Possible improvements
@@ -27,3 +35,7 @@ Tested using java 8.
   converts it to an int array.
 * have the results be a set of ranges which satisfies the max difference. Currently, it only keeps the
   first one.
+
+## Discussion
+* Least complex solution would be iterating through each share price and comparing
+it to every share price in the array. However, this would have a time complexity of O(N2).
