@@ -11,7 +11,9 @@ Write an efficient function that takes an array of stock prices and returns the 
 
 Tested using java 8.
 
+Usage: This should run build the package and run the tests.
 
+$ `mvn package`
 
 ## Assumptions :
 * Takes in an array on ints
