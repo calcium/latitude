@@ -20,6 +20,8 @@ Tested using java 8.
 
 ## Design
 * Design has Time Complexity : O(n), Auxiliary Space : O(1)
+* I made the decision to keep the range used to get the bestResult,
+which I think if it is used, will be a question often asked for anyways.
 * Algorithm :
 As we traverse the array, we keep the max difference ie. bestResult.
 If there is a new low share price encountered, we mark it as the current low,
